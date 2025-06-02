@@ -29,6 +29,7 @@ Thumbs.db
 
 # Project specific
 *.csv
-*.json
-!package.json
-!package-lock.json 
+waterfootprint_xgboost_model.json
+
+# Specifically ignore the virtual environment
+Backend/myenv/

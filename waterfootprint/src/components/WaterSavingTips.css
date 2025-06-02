@@ -1,0 +1,225 @@
+.water-saving-tips {
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.tips-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tips-header h1 {
+  font-size: 2.5rem;
+  color: #1e3c72;
+  margin-bottom: 1rem;
+}
+
+.tips-header p {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.tips-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.category-nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.category-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  border: 2px solid #1e3c72;
+  border-radius: 8px;
+  background: white;
+  color: #1e3c72;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.category-button i {
+  font-size: 1.2rem;
+}
+
+.category-button:hover {
+  background: #1e3c72;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.category-button.active {
+  background: #1e3c72;
+  color: white;
+  box-shadow: 0 4px 15px rgba(30, 60, 114, 0.2);
+}
+
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.tip-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.tip-card:hover {
+  transform: translateY(-5px);
+}
+
+.tip-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.tip-header h3 {
+  font-size: 1.4rem;
+  color: #1e3c72;
+  margin: 0;
+}
+
+.impact-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #e8f5e9;
+  color: #2e7d32;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.impact-badge i {
+  font-size: 1rem;
+}
+
+.suggestions-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.suggestions-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+.suggestions-list li i {
+  color: #4caf50;
+  margin-top: 0.2rem;
+}
+
+.tips-footer {
+  background: white;
+  border-radius: 12px;
+  padding: 3rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 3rem;
+}
+
+.impact-summary {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.impact-summary h2 {
+  font-size: 2rem;
+  color: #1e3c72;
+  margin-bottom: 1rem;
+}
+
+.impact-summary p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.impact-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.stat-item:hover {
+  transform: translateY(-2px);
+}
+
+.stat-item i {
+  font-size: 2rem;
+  color: #1e3c72;
+}
+
+.stat-item span {
+  font-size: 1.1rem;
+  color: #666;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .water-saving-tips {
+    padding: 2rem 1rem;
+  }
+
+  .tips-header h1 {
+    font-size: 2rem;
+  }
+
+  .category-nav {
+    flex-direction: column;
+  }
+
+  .category-button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .tips-footer {
+    padding: 2rem;
+  }
+
+  .impact-stats {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Add Font Awesome icons */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css'); 

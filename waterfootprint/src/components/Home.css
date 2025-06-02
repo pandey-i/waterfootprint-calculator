@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+.home {
+  text-align: center;
+  margin: 20px;
+  font-family: 'Open Sans', sans-serif;
+  padding-bottom: 200px; /* Add padding to prevent footer overlap */
+}
+
+.home h1 {
+  margin-top: 130px;
+  font-size: 2.5em;
+  font-weight: 700;
+  color: #26c5a0;
+}
+
+.home p {
+  font-size: 1.2em;
+  font-weight: 400;
+  color: #b6afaf;
+}
+
+.footprint-button {
+  display: inline-block;
+  margin-top: 20px; /* Space above the button */
+  padding: 10px 20px; /* Padding for the button */
+  font-size: 2em; /* Font size */
+  font-weight: 700; /* Bold text */
+  color: #fff; /* Text color */
+  background-color: #15a6e9; /* Button background color */
+  border: none; /* Remove default border */
+  border-radius: 25px; /* Rounded border */
+  cursor: pointer; /* Pointer cursor on hover */
+  text-align: center; /* Center text */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.footprint-button:hover {
+  background-color: #1e9e80; /* Darker shade on hover */
+}
+
+.know-more-section {
+  margin-top: 120px;
+  padding: 40px 20px;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #64979e, #2da4db);
+  border-radius: 15px;
+}
+
+/* Multiple wave layers for more realistic effect */
+.know-more-section::before,
+.know-more-section::after,
+.know-more-section .wave-1,
+.know-more-section .wave-2 {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 120px;
+  background-repeat: repeat-x;
+  transform: translate3d(0, 0, 0);
+}
+
+/* First wave layer */
+.know-more-section::before {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z' fill='rgba(255, 255, 255, 0.15)'/%3E%3C/svg%3E");
+  background-size: 1600px 120px;
+  animation: wave 15s linear infinite;
+  opacity: 0.8;
+  z-index: 1;
+}
+
+/* Second wave layer */
+.know-more-section::after {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z' fill='rgba(255, 255, 255, 0.2)'/%3E%3C/svg%3E");
+  background-size: 1800px 120px;
+  animation: wave 12s linear infinite;
+  opacity: 0.6;
+  z-index: 2;
+}
+
+/* Third wave layer */
+.know-more-section .wave-1 {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z' fill='rgba(255, 255, 255, 0.25)'/%3E%3C/svg%3E");
+  background-size: 2000px 120px;
+  animation: wave-reverse 20s linear infinite;
+  opacity: 0.4;
+  z-index: 3;
+}
+
+/* Fourth wave layer */
+.know-more-section .wave-2 {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z' fill='rgba(255, 255, 255, 0.3)'/%3E%3C/svg%3E");
+  background-size: 2200px 120px;
+  animation: wave 25s linear infinite;
+  opacity: 0.3;
+  z-index: 4;
+}
+
+/* Wave animations */
+@keyframes wave {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes wave-reverse {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Update text colors for better contrast */
+.know-more-section h2 {
+  color: white;
+  font-size: 2em;
+  margin-bottom: 30px;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+}
+
+.image-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 250px; /* Increased space between images */
+  margin-top: 20px;
+}
+
+.image-item {
+  text-align: center;
+}
+
+.circle-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.circle-image:hover {
+  transform: scale(1.1);
+}
+
+.image-item p {
+  color: white;
+  font-size: 1.1em;
+  margin-top: 10px;
+  position: relative;
+  z-index: 1;
+}

@@ -1,0 +1,47 @@
+.additional-section {
+  margin-top: 20px; /* Space above the additional section */
+  padding: 10px;
+  background-color: #b2ebf2; /* Slightly darker blue for contrast */
+  border-radius: 8px; /* Rounded corners */
+  
+}
+
+.about-us h1 {
+  font-size: 2.5em;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  color: #00796b; /* Darker shade of teal */
+}
+
+.about-us img {
+  max-width: 10%; /* Responsive image */
+  height: 20%; /* Maintain aspect ratio */
+  border-radius: 10px; /* Rounded corners for the image */
+  margin-bottom: 20px; /* Space below the image */
+}
+
+.about-us p {
+  font-size: 1.2em;
+  line-height: 1.5;
+  color: #004d40; /* Darker text color */
+}
+
+.image-gallery {
+  display: flex;
+  justify-content: space-around; /* Space images evenly */
+  margin-top: 20px; /* Space above the image gallery */
+}
+
+.image-item {
+  text-align: center; /* Center the text below each image */
+}
+
+.circle-image {
+  width: 150px; /* Increased width */
+  height: 150px; /* Increased height to maintain aspect ratio */
+  border-radius: 50%; /* Make the image circular */
+  object-fit: cover; /* Ensure the image covers the circle */
+  margin-bottom: 10px; /* Space between image and text */
+}
+
+

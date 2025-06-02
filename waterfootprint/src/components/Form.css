@@ -1,0 +1,152 @@
+/* Form.css */
+
+.water-form {
+  max-width: 700px;
+  margin: 20px auto;
+  margin-top: 100px;
+  padding: 30px;
+  background: #fff;
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+  color: #000; /* Text color set to black */
+  transition: all 0.3s ease;
+  position: relative;
+  width: auto; /* Remove the large width */
+  margin-bottom: 200px; /* Add margin bottom to prevent footer overlap */
+}
+
+/* Hover effect on form */
+.water-form:hover {
+  box-shadow: 0 0 30px rgba(22, 22, 22, 0.8);
+  transform: scale(1.02);
+  border: 1px solid #efeded;
+}
+
+/* Title styling */
+.water-form h1 {
+  text-align: center;
+  font-size: 28px;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+/* Form input fields */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: #141515;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  color: #000; /* Text color inside input fields set to black */
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+/* Focus effect on input fields */
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #161616;
+  outline: none;
+  background-color: #fff;
+  color: #807676; /* Text stays black on focus */
+}
+
+/* Submit button styling */
+.submit-button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #007bff, #00bcd4);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0 3px 10px rgba(0, 188, 212, 0.3);
+  transition: all 0.3s ease;
+}
+
+/* Button hover effect */
+.submit-button:hover {
+  background: #00bcd4;
+  color: #fff;
+  box-shadow: 0 0 15px rgba(0, 188, 212, 0.8);
+}
+
+/* Recommendations section */
+.recommendation-box {
+  margin-top: 30px;
+  padding: 20px;
+  background: rgba(0, 188, 212, 0.1);
+  border: 1px solid #00bcd4;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 188, 212, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.recommendation-box:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 188, 212, 0.3);
+}
+
+/* Title styling for recommendations */
+.recommendation-box h3 {
+  font-size: 24px;
+  color: #007bff;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* List items */
+.recommendation-box ul {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0; /* Remove padding */
+}
+
+.recommendation-box li {
+  background: rgba(0, 188, 212, 0.2);
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 5px solid #00bcd4;
+  box-shadow: 0 2px 5px rgba(0, 188, 212, 0.1);
+  transition: transform 0.2s ease;
+  font-size: 16px; /* Increase font size for better readability */
+}
+
+.recommendation-box li:hover {
+  transform: translateX(5px);
+  background: rgba(0, 188, 212, 0.3);
+}
+
+@media (max-width: 768px) {
+  .water-form {
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 200px; /* Maintain margin for mobile */
+  }
+
+  .submit-button {
+    font-size: 16px;
+  }
+
+  .recommendation-box li {
+    padding: 8px;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "waterfootprint-backend",
+  "version": "1.0.0",
+  "description": "Backend for Water Footprint donation system",
+  "main": "razorpay.js",
+  "scripts": {
+    "start": "node razorpay.js",
+    "dev": "nodemon razorpay.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "razorpay": "^2.8.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+} 
